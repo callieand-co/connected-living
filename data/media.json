@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "note": "Add with: node tools/add.mjs <url> --note \"why it is here\" --tags intent,ids --products product-slugs. Videos embed the platform player on click; nothing is rehosted."
+  },
+  "media": [
+    {
+      "slug": "victoria-morse-iL7Jj8",
+      "type": "youtube",
+      "videoId": "9oRFgiL7Jj8",
+      "url": "https://www.youtube.com/watch?v=9oRFgiL7Jj8",
+      "platform": "YouTube",
+      "title": "I'm Addicted to Being OFF my Phone ✨ how my life changed when i stopped scrolling",
+      "creator": "Victoria Morse",
+      "creatorUrl": "https://www.youtube.com/@victoriamorsew",
+      "note": "The best case for this whole index is someone describing the after. Not a detox diary — a person who got her attention back and liked it enough to stay.",
+      "tags": [
+        "stop-the-scroll",
+        "leave-it-home"
+      ],
+      "products": [],
+      "added": "2026-09-15",
+      "image": "img/media/victoria-morse-iL7Jj8.jpg"
+    },
+    {
+      "slug": "florencia-ornelas-169106",
+      "type": "tiktok",
+      "videoId": "7678403371346169106",
+      "url": "https://www.tiktok.com/@florenceoff/video/7678403371346169106",
+      "platform": "TikTok",
+      "title": "Fun diy projects if you want to be offline more often 😋",
+      "creator": "Florencia Ornelas",
+      "creatorHandle": "florenceoff",
+      "creatorUrl": "https://www.tiktok.com/@florenceoff",
+      "note": "The Workshop category in ninety seconds: small, buildable things that make being offline more fun than being online.",
+      "tags": [
+        "make-it-yourself"
+      ],
+      "products": [
+        "uconsole"
+      ],
+      "added": "2026-09-15",
+      "image": "img/media/florencia-ornelas-169106.jpg"
+    },
+    {
+      "slug": "engadget-953999",
+      "type": "article",
+      "url": "https://www.engadget.com/mobile/smartphones/the-minimalist-light-phone-iii-is-officially-available-for-purchase-150056138.html",
+      "platform": "Engadget",
+      "title": "The minimalist Light Phone III is officially available for purchase",
+      "creator": null,
+      "published": "2025-03-27",
+      "dek": "The Light Phone III is here, with availability directly from the company and from supported retailers. This minimalist phone includes a black-and-white OLED screen, though it costs $800.",
+      "note": "Launch coverage for the Light Phone III — specs, price, and the first shipping window.",
+      "tags": [],
+      "products": [
+        "light-phone-iii"
+      ],
+      "added": "2026-09-15",
+      "image": "img/media/engadget-953999.jpg"
+    },
+    {
+      "slug": "axios-984547",
+      "type": "article",
+      "url": "https://www.axios.com/2024/04/27/toxic-screen-time-social-media-dumbphone",
+      "platform": "Axios",
+      "title": "Sick of toxic screen time? Dumbphones are having a moment",
+      "creator": null,
+      "published": "2024-04-27",
+      "dek": null,
+      "note": "The trend piece that put a number on it — useful mainly as the before-photo for how fast the category has grown since.",
+      "tags": [
+        "stop-the-scroll",
+        "first-phone"
+      ],
+      "products": [
+        "light-flip",
+        "punkt-mp02"
+      ],
+      "added": "2026-09-15",
+      "image": "img/media/axios-984547.jpg"
+    },
+    {
+      "slug": "ktla-984746",
+      "type": "article",
+      "url": "https://ktla.com/news/dumb-phones-offer-an-escape-from-the-endless-scroll/",
+      "platform": "KTLA",
+      "title": "Dumb phones offer an escape from the endless scroll",
+      "creator": null,
+      "published": null,
+      "dek": null,
+      "note": "Local LA TV on the dumbphone wave — the demand, on camera.",
+      "tags": [
+        "stop-the-scroll"
+      ],
+      "products": [
+        "light-phone-iii"
+      ],
+      "added": "2026-09-15"
+    },
+    {
+      "slug": "dpreview-984871",
+      "type": "article",
+      "url": "https://www.dpreview.com/reviews/camp-snap-camera-review-perfect-for-camp-rules-but-what-about-the-photos",
+      "platform": "DPReview",
+      "title": "Camp Snap camera review: Perfect for camp rules, but what about the photos?",
+      "creator": null,
+      "published": "2025-05-28",
+      "dek": null,
+      "note": "A camera site reviewing a camera with no screen, honestly. Read it for the downsides.",
+      "tags": [
+        "camera-not-feed"
+      ],
+      "products": [
+        "camp-snap"
+      ],
+      "added": "2026-09-15",
+      "image": "img/media/dpreview-984871.jpg"
+    }
+  ]
+}

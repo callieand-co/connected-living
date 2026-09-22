@@ -1,0 +1,1189 @@
+{
+  "meta": {
+    "lastChecked": "2026-09-14",
+    "note": "priceVerified=true means the price was read off the maker's own store. Entries sourced from the founder doc carry source and mostly need pricing before launch."
+  },
+  "categories": [
+    {
+      "id": "phones",
+      "name": "Phones",
+      "blurb": "Devices that make calls, send texts, and then stop.",
+      "glyph": "phone",
+      "accent": "#C6F24E",
+      "ink": "#141308",
+      "tint": "rgba(198,242,78,0.12)"
+    },
+    {
+      "id": "objects",
+      "name": "Objects",
+      "blurb": "Things you hold. One job, done completely.",
+      "glyph": "camera",
+      "accent": "#F2622E",
+      "ink": "#FFF3EE",
+      "tint": "rgba(242,98,46,0.12)"
+    },
+    {
+      "id": "tools",
+      "name": "Tools",
+      "blurb": "Software that gives time back instead of taking it.",
+      "glyph": "breath",
+      "accent": "#7E93FF",
+      "ink": "#F0F2FF",
+      "tint": "rgba(126,147,255,0.14)"
+    },
+    {
+      "id": "workshop",
+      "name": "Workshop",
+      "blurb": "Built by hand, in small numbers, on purpose.",
+      "glyph": "circuit",
+      "accent": "#FFC94D",
+      "ink": "#181206",
+      "tint": "rgba(255,201,77,0.14)"
+    },
+    {
+      "id": "studios",
+      "name": "Studios",
+      "blurb": "The people organising around a different kind of technology.",
+      "glyph": "box",
+      "accent": "#FF9ED2",
+      "ink": "#2A0F1F",
+      "tint": "rgba(255,158,210,0.14)"
+    },
+    {
+      "id": "voices",
+      "name": "Voices",
+      "blurb": "Writers, zines and guides mapping the territory.",
+      "glyph": "breath",
+      "accent": "#69DFC0",
+      "ink": "#06201A",
+      "tint": "rgba(105,223,192,0.14)"
+    }
+  ],
+  "intents": [
+    {
+      "id": "stop-the-scroll",
+      "label": "Stop the scroll"
+    },
+    {
+      "id": "camera-not-feed",
+      "label": "A camera, not a feed"
+    },
+    {
+      "id": "write-no-tabs",
+      "label": "Write without tabs"
+    },
+    {
+      "id": "read-no-glare",
+      "label": "Read without glare"
+    },
+    {
+      "id": "leave-it-home",
+      "label": "Leave it at home"
+    },
+    {
+      "id": "household",
+      "label": "For the whole household"
+    },
+    {
+      "id": "first-phone",
+      "label": "A first phone"
+    },
+    {
+      "id": "make-it-yourself",
+      "label": "Make it yourself"
+    },
+    {
+      "id": "protect-my-data",
+      "label": "Protect my data"
+    },
+    {
+      "id": "keep-what-i-find",
+      "label": "Keep what I find"
+    },
+    {
+      "id": "be-present",
+      "label": "Be present with people"
+    },
+    {
+      "id": "own-my-work",
+      "label": "Own what I make"
+    },
+    {
+      "id": "joy-online",
+      "label": "Actually enjoy being online"
+    },
+    {
+      "id": "learn-the-field",
+      "label": "Learn the field"
+    }
+  ],
+  "products": [
+    {
+      "slug": "light-phone-iii",
+      "index": 1,
+      "name": "Light Phone III",
+      "maker": "Light",
+      "makerSlug": "light",
+      "category": "phones",
+      "stackSlot": "phone",
+      "price": 899,
+      "priceLabel": "$899",
+      "priceVerified": true,
+      "url": "https://www.thelightphone.com/shop",
+      "intents": [
+        "stop-the-scroll",
+        "leave-it-home"
+      ],
+      "summary": "The phone for people who are done negotiating with themselves.",
+      "argument": "There is no app store to relapse into, no browser to open at 1am, no settings menu where the discipline quietly dies. The III finally added a camera and payments, which kills the three excuses that sent everyone back to their iPhone.",
+      "caution": "It costs flagship money to do dramatically less. That is the joke and also the point.",
+      "specs": {
+        "Display": "Black-and-white OLED",
+        "Apps": "Phone, messages, camera, music, notes, directions",
+        "Browser": "None",
+        "Made by": "Light, Brooklyn NY"
+      }
+    },
+    {
+      "slug": "light-flip",
+      "index": 2,
+      "name": "Light Flip",
+      "maker": "Light",
+      "makerSlug": "light",
+      "category": "phones",
+      "stackSlot": "phone",
+      "price": 299,
+      "priceLabel": "$299",
+      "priceVerified": true,
+      "url": "https://www.thelightphone.com/shop",
+      "intents": [
+        "stop-the-scroll",
+        "first-phone",
+        "leave-it-home"
+      ],
+      "summary": "Nine hundred dollars is a commitment. Three hundred is a Tuesday.",
+      "argument": "The hard part of going light was never the willpower, it was the price tag. The Flip costs about what nice headphones cost, which is the exact threshold where people stop deliberating and just try it. Also: it is a flip phone in yellow.",
+      "caution": "Newer than the III, so long-term firmware support is still a promise, not a record.",
+      "specs": {
+        "Form": "Clamshell flip",
+        "Network": "5G",
+        "Colors": "Black, navy, red, pink, yellow, gray",
+        "Made by": "Light, Brooklyn NY"
+      }
+    },
+    {
+      "slug": "punkt-mp02",
+      "index": 3,
+      "name": "Punkt MP02",
+      "maker": "Punkt.",
+      "makerSlug": "punkt",
+      "category": "phones",
+      "stackSlot": "phone",
+      "price": 379,
+      "priceLabel": "~$379",
+      "priceVerified": false,
+      "url": "https://www.punkt.ch/products/mp02-4g-minimalist-phone",
+      "intents": [
+        "stop-the-scroll",
+        "leave-it-home"
+      ],
+      "summary": "A Swiss calculator that makes encrypted calls. Jasper Morrison designed it.",
+      "argument": "This is the design-object end of the category, the one you leave face-up on the table because it looks better than the conversation. It runs Signal-compatible messaging and tethers 4G to your laptop, so you can still work from a cafe without carrying a slot machine.",
+      "caution": "Typing on it is genuinely miserable. Arguably the feature.",
+      "specs": {
+        "Display": "2.4in colour",
+        "Input": "Physical keypad",
+        "Messaging": "Signal-compatible, encrypted",
+        "Extras": "4G hotspot tethering"
+      }
+    },
+    {
+      "slug": "camp-snap",
+      "index": 4,
+      "name": "Camp Snap",
+      "maker": "Camp Snap",
+      "makerSlug": "camp-snap",
+      "category": "objects",
+      "stackSlot": "companion",
+      "price": 69.95,
+      "priceLabel": "$69.95",
+      "priceVerified": false,
+      "url": "https://www.campsnapphoto.com/",
+      "intents": [
+        "camera-not-feed",
+        "leave-it-home"
+      ],
+      "summary": "A camera with no screen. You meet your photos days later, like a stranger.",
+      "argument": "Kill the screen and you kill the whole review loop: the checking, the retaking, the posting before dessert. What comes back feels like film — two thousand images you discover at a desk instead of curating at the table. Cheapest thing here and the most likely to change an entire trip.",
+      "caution": "The photos are fine, not great. You are buying the constraint, not the sensor.",
+      "specs": {
+        "Screen": "None",
+        "Storage": "4GB SD, ~2,000 photos",
+        "Power": "Rechargeable",
+        "Best for": "Camps, travel, kids"
+      }
+    },
+    {
+      "slug": "freewrite-alpha",
+      "index": 5,
+      "name": "Freewrite Alpha",
+      "maker": "Astrohaus",
+      "makerSlug": "astrohaus",
+      "category": "objects",
+      "stackSlot": "companion",
+      "price": 349,
+      "priceLabel": "$349",
+      "priceVerified": false,
+      "url": "https://getfreewrite.com/products/alpha",
+      "intents": [
+        "write-no-tabs"
+      ],
+      "summary": "A keyboard with nowhere to go.",
+      "argument": "It shows you two to six lines at a time, which sounds like a limitation until you realise editing while drafting has become physically impossible. Instant on, weeks of battery, no tab to check. A typewriter that files to the cloud.",
+      "caution": "Regularly discounted to around $299. Do not pay list without looking.",
+      "specs": {
+        "Display": "LCD, 2-6 lines",
+        "Battery": "Weeks",
+        "Sync": "Cloud, one-way out",
+        "Siblings": "Traveler and Smart Typewriter, $499-999"
+      }
+    },
+    {
+      "slug": "daylight-dc-1",
+      "index": 6,
+      "name": "Daylight DC-1",
+      "maker": "Daylight Computer Co.",
+      "makerSlug": "daylight",
+      "category": "objects",
+      "stackSlot": "companion",
+      "price": 729,
+      "priceLabel": "$729",
+      "priceVerified": false,
+      "url": "https://daylightcomputer.com/",
+      "intents": [
+        "read-no-glare",
+        "write-no-tabs"
+      ],
+      "summary": "E-ink calm, running at screen speed.",
+      "argument": "Every other paper-like device makes you choose between eye comfort and responsiveness. This one refreshes at 60Hz, so it scrolls like a tablet and reads like a page — and unlike every glossy screen you own, it works in direct sun.",
+      "caution": "Frequently sold out, and $729 is a lot of money for reading. Thirty-day returns.",
+      "specs": {
+        "Display": "Live Paper, 60Hz, blue-light free",
+        "Use": "Reading, writing, note-taking",
+        "Sunlight": "Fully legible",
+        "Returns": "30 days"
+      }
+    },
+    {
+      "slug": "brick",
+      "index": 7,
+      "name": "Brick",
+      "maker": "Brick",
+      "makerSlug": "brick",
+      "category": "tools",
+      "stackSlot": "intervention",
+      "price": 59,
+      "priceLabel": "$59, no subscription",
+      "priceVerified": false,
+      "url": "https://getbrick.app/",
+      "intents": [
+        "stop-the-scroll",
+        "leave-it-home"
+      ],
+      "summary": "Tap your phone on a magnet and it becomes a brick. Walk away.",
+      "argument": "Every software blocker fails the same way: the off switch travels in your pocket. Brick puts the key on your fridge, so quitting the block means physically walking back to it. Fifty-nine dollars once, no subscription — meaning nobody profits from your relapse.",
+      "caution": "You can defeat the whole thing by putting it in your bag. Mount it somewhere inconvenient.",
+      "specs": {
+        "Price model": "One-time, no subscription",
+        "App": "Free, iOS and Android",
+        "Unblocks": "Five emergency overrides",
+        "Extras": "Schedules, strict mode, remote activation"
+      }
+    },
+    {
+      "slug": "one-sec",
+      "index": 8,
+      "name": "one sec",
+      "maker": "Frederik Riedel",
+      "makerSlug": "frederik-riedel",
+      "category": "tools",
+      "stackSlot": "intervention",
+      "price": 0,
+      "priceLabel": "Free, pro from ~$10/yr",
+      "priceVerified": false,
+      "url": "https://one-sec.app/",
+      "intents": [
+        "stop-the-scroll"
+      ],
+      "summary": "One breath before the app opens. Most of the time, you close it instead.",
+      "argument": "It blocks nothing. It just puts four seconds between the impulse and the feed, and it turns out most impulses do not survive four seconds. The only thing on this list with a peer-reviewed result behind it: a 57% drop, measured with the Max Planck Institute.",
+      "caution": "Friction you control is friction you can learn to ignore. Pair it with something physical.",
+      "specs": {
+        "Mechanism": "Breathing-exercise interception",
+        "Evidence": "57% reduction, Max Planck / Heidelberg study",
+        "Platforms": "iOS, Android",
+        "Built by": "One indie developer"
+      }
+    },
+    {
+      "slug": "aro-box",
+      "index": 9,
+      "name": "Aro Box",
+      "maker": "Aro",
+      "makerSlug": "aro",
+      "category": "tools",
+      "stackSlot": "intervention",
+      "price": 349,
+      "priceLabel": "~$349 + app subscription",
+      "priceVerified": false,
+      "url": "https://goaro.com/products/aro-box",
+      "intents": [
+        "household",
+        "leave-it-home"
+      ],
+      "summary": "A hearth for phones. Everyone plugs in, nobody argues.",
+      "argument": "The only thing here built for a household instead of a person. It blocks nothing — it just gives the phones somewhere to go, which is the habit every other intervention is trying to fake. Four cables, so nobody gets to claim they were charging.",
+      "caution": "Hardware plus a subscription. An expensive way to buy a box.",
+      "specs": {
+        "For": "Households and families",
+        "Cables": "Four, interchangeable",
+        "App": "Subscription, from ~$9/mo per family",
+        "Made in": "Knoxville TN"
+      }
+    },
+    {
+      "slug": "uconsole",
+      "index": 10,
+      "name": "uConsole",
+      "maker": "ClockworkPi",
+      "makerSlug": "clockworkpi",
+      "category": "workshop",
+      "stackSlot": "workshop",
+      "price": 249,
+      "priceLabel": "$204-249, kit",
+      "priceVerified": false,
+      "url": "https://www.clockworkpi.com/product-page/uconsole-kit-rpi-cm4-lite",
+      "intents": [
+        "make-it-yourself"
+      ],
+      "summary": "Build your own handheld Linux computer. The gateway cyberdeck.",
+      "argument": "Most of this index is about subtracting. This is the opposite urge — making a machine that is strange, personal and entirely yours. The cheapest honest way into cyberdecks without a 3D printer and a weekend of forum archaeology.",
+      "caution": "Ships from Hong Kong in roughly 90 business days. Modules are perpetually out of stock.",
+      "specs": {
+        "Form": "5in IPS, 74-key backlit QWERTY, trackball",
+        "Brain": "Raspberry Pi CM4 (often sold separately)",
+        "Assembly": "Required",
+        "Lead time": "~90 business days"
+      }
+    },
+    {
+      "slug": "loop-earplugs",
+      "index": 11,
+      "name": "Loop Earplugs",
+      "maker": "Loop",
+      "makerSlug": "loop",
+      "category": "objects",
+      "stackSlot": "companion",
+      "price": 0,
+      "priceLabel": "See maker",
+      "priceVerified": false,
+      "url": "https://us.loopearplugs.com/",
+      "intents": [
+        "be-present",
+        "stop-the-scroll"
+      ],
+      "summary": "A volume knob for real life, disguised as an earring.",
+      "argument": "Everyone is optimising screen time while a leaf blower runs outside. Loop went after the actual noise — and made it look like jewellery, so you will wear them in public instead of leaving early.",
+      "caution": "Fit is everything. Wrong size, wrong experience.",
+      "specs": {
+        "Form": "Reusable silicone + filter",
+        "Use": "Concerts, focus, sleep, sensory load",
+        "Customers": "14M+ claimed",
+        "Made by": "Loop, Antwerp"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "linea",
+      "index": 12,
+      "name": "Linea",
+      "maker": "Linea",
+      "makerSlug": "linea",
+      "category": "objects",
+      "stackSlot": "companion",
+      "price": 0,
+      "priceLabel": "Launching 2026",
+      "priceVerified": false,
+      "url": "https://lineaposture.com/",
+      "intents": [
+        "be-present"
+      ],
+      "summary": "A posture coach that refuses to look like a wearable.",
+      "argument": "It is a necklace. It taps you when you slump. That is the entire product, and the restraint is the point — no rings, no score, no dashboard quantifying your spine before breakfast.",
+      "caution": "Not shipping yet, listed for 2026. Treat it as a preorder.",
+      "specs": {
+        "Form": "Pendant necklace",
+        "Feedback": "Gentle haptic",
+        "Status": "Launching 2026",
+        "Made by": "Linea"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "rocketbook",
+      "index": 13,
+      "name": "Rocketbook",
+      "maker": "Rocketbook",
+      "makerSlug": "rocketbook",
+      "category": "objects",
+      "stackSlot": "companion",
+      "price": 0,
+      "priceLabel": "See maker",
+      "priceVerified": false,
+      "url": "https://getrocketbook.com/",
+      "intents": [
+        "write-no-tabs",
+        "keep-what-i-find"
+      ],
+      "summary": "Write by hand, scan it, wipe it, do it again.",
+      "argument": "It refuses to pick a side in the paper-versus-digital argument and just solves it: you think on paper, the page ends up searchable, the notebook never runs out. A bad first draft costs nothing.",
+      "caution": "The app is the weak link. Test the workflow before you trust your notes to it.",
+      "specs": {
+        "Form": "Reusable notebook",
+        "Erase": "Damp cloth",
+        "Sync": "Cloud services",
+        "Made by": "Rocketbook"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "genic",
+      "index": 14,
+      "name": "Genic",
+      "maker": "GENIC",
+      "makerSlug": "genic",
+      "category": "objects",
+      "stackSlot": "companion",
+      "price": 0,
+      "priceLabel": "Capsule drops",
+      "priceVerified": false,
+      "url": "https://genic.film/pages/events",
+      "intents": [
+        "camera-not-feed",
+        "keep-what-i-find"
+      ],
+      "summary": "A wearable memory archive, sold in numbered capsules. LA to Seoul.",
+      "argument": "Memory as something you wear and keep, not something you upload and lose. It is also the only proof in this index that this category can be sold like fashion — drops, queues, editions — which nobody else here has tried.",
+      "caution": "Limited capsules with a waiting line. Scarcity is the model, not a bug.",
+      "specs": {
+        "Format": "Capsule drops",
+        "Current": "Capsule No.002, metal",
+        "Cities": "LA / Seoul",
+        "Made by": "GENIC"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "ohmni",
+      "index": 15,
+      "name": "Ohmni",
+      "maker": "OHMNI",
+      "makerSlug": "ohmni",
+      "category": "objects",
+      "stackSlot": "companion",
+      "price": 0,
+      "priceLabel": "See maker",
+      "priceVerified": false,
+      "url": "https://ohmni.com/",
+      "intents": [
+        "protect-my-data",
+        "leave-it-home"
+      ],
+      "summary": "A bag that blocks tracking. Made by M.I.A.",
+      "argument": "Privacy usually lives buried in a settings menu where nobody visits it. Ohmni turns it into an object you carry, which is exactly the trick this whole index runs on: make the invisible choice a visible one.",
+      "caution": "EMF health claims are contested and you should read the science yourself. Buy it for the tracking blocking and the design.",
+      "specs": {
+        "Function": "Signal / tracking blocking",
+        "Form": "Carry goods",
+        "Founded by": "M.I.A.",
+        "Made by": "OHMNI"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "index-fragrances",
+      "index": 16,
+      "name": "index",
+      "maker": "index",
+      "makerSlug": "index-you",
+      "category": "objects",
+      "stackSlot": "companion",
+      "price": 0,
+      "priceLabel": "Edition of one",
+      "priceVerified": false,
+      "url": "https://index.you/",
+      "intents": [
+        "keep-what-i-find",
+        "be-present"
+      ],
+      "summary": "One conversation becomes one perfume. Edition of one, forever.",
+      "argument": "The precise opposite of a feed: unrepeatable, unscalable, made by a person who spoke to you. The archive of past editions is the most quietly radical thing on this site.",
+      "caution": "Not technology by any normal definition. Here as a model for what unrepeatable commerce looks like.",
+      "specs": {
+        "Format": "Edition of one",
+        "Input": "A conversation",
+        "Output": "A bottled fragrance",
+        "Made by": "index"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "every-human",
+      "index": 17,
+      "name": "Every Human",
+      "maker": "EveryHuman",
+      "makerSlug": "every-human",
+      "category": "objects",
+      "stackSlot": "companion",
+      "price": 0,
+      "priceLabel": "See maker",
+      "priceVerified": false,
+      "url": "https://www.everyhuman.com/us/en/products",
+      "intents": [
+        "keep-what-i-find"
+      ],
+      "summary": "AI pointed at making something nobody else can have.",
+      "argument": "Most AI products pull everyone toward the same average. This one aims the same machinery at a scent that is only yours, which is a useful counterexample to keep on the shelf.",
+      "caution": "The process is the pitch. Judge it by the scent.",
+      "specs": {
+        "Method": "Algorithmic perfumery",
+        "Output": "Personal scent",
+        "Made by": "EveryHuman"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "clicks-communicator",
+      "index": 18,
+      "name": "Clicks Communicator",
+      "maker": "Clicks",
+      "makerSlug": "clicks",
+      "category": "phones",
+      "stackSlot": "phone",
+      "price": 0,
+      "priceLabel": "See maker",
+      "priceVerified": false,
+      "url": "https://clicks.tech/communicator",
+      "intents": [
+        "stop-the-scroll",
+        "be-present"
+      ],
+      "summary": "Keep the capability. Lose the slot machine.",
+      "argument": "The most credible attempt yet at a third option between a smartphone and a dumbphone. The physical keyboard is the whole argument — typing is a decision in a way that scrolling never is.",
+      "caution": "New and unproven. Check shipping before you order.",
+      "specs": {
+        "Input": "Physical keyboard",
+        "Built for": "Communication and action",
+        "Made by": "Clicks"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "freedom",
+      "index": 19,
+      "name": "Freedom",
+      "maker": "Freedom",
+      "makerSlug": "freedom",
+      "category": "tools",
+      "stackSlot": "intervention",
+      "price": 0,
+      "priceLabel": "Free trial, then subscription",
+      "priceVerified": false,
+      "url": "https://freedom.to/",
+      "intents": [
+        "stop-the-scroll"
+      ],
+      "summary": "Blocks everything, everywhere, at once.",
+      "argument": "Locking your phone while your laptop sits open is theatre. Freedom syncs the block across every device you own, which is unglamorous and the reason it works.",
+      "caution": "Subscription, and the off switch stays with you unless you use locked mode.",
+      "specs": {
+        "Platforms": "Mac, Windows, iOS, Android, Chrome",
+        "Mode": "Scheduled sessions",
+        "Model": "Subscription"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "forest",
+      "index": 20,
+      "name": "Forest",
+      "maker": "Forest",
+      "makerSlug": "forest",
+      "category": "tools",
+      "stackSlot": "intervention",
+      "price": 0,
+      "priceLabel": "Paid app / free tier",
+      "priceVerified": false,
+      "url": "https://forestapp.cc/",
+      "intents": [
+        "stop-the-scroll"
+      ],
+      "summary": "Leave the app and the tree dies. Somehow this works.",
+      "argument": "It converts an abstract loss — twenty minutes, gone — into a small concrete thing you personally killed. Slightly ridiculous. Extremely effective on people that willpower apps have failed.",
+      "caution": "The mechanism is gamified guilt. If that backfires for you, use a blocker instead.",
+      "specs": {
+        "Mechanic": "Grow a tree per session",
+        "Platforms": "iOS, Android",
+        "Model": "Paid app"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "opal",
+      "index": 21,
+      "name": "Opal",
+      "maker": "Opal",
+      "makerSlug": "opal",
+      "category": "tools",
+      "stackSlot": "intervention",
+      "price": 0,
+      "priceLabel": "Free tier, pro subscription",
+      "priceVerified": false,
+      "url": "https://opalapp.com/",
+      "intents": [
+        "stop-the-scroll"
+      ],
+      "summary": "The polished one. Focus measured in weeks, not moments.",
+      "argument": "Most blockers police a single impulse. Opal treats attention as something with a trend line, which is the more honest frame — you are not trying to win an afternoon, you are trying to move an average.",
+      "caution": "Apple-only, and the good parts sit behind a subscription.",
+      "specs": {
+        "Platforms": "iPhone, iPad, macOS",
+        "Measures": "Focus score over time",
+        "Model": "Subscription"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "poolsuite",
+      "index": 22,
+      "name": "Poolsuite",
+      "maker": "Poolsuite",
+      "makerSlug": "poolsuite",
+      "category": "tools",
+      "stackSlot": "intervention",
+      "price": 0,
+      "priceLabel": "Free",
+      "priceVerified": false,
+      "url": "https://poolsuite.net/",
+      "intents": [
+        "joy-online"
+      ],
+      "summary": "Permanent summer, no feed, free forever.",
+      "argument": "Proof that the answer to a bad internet is not less internet — it is a better one. Useless, delightful, and completely devoid of anything trying to retain you.",
+      "specs": {
+        "Format": "Internet radio",
+        "Mood": "Permanent summer",
+        "Price": "Free",
+        "Formerly": "Poolside FM"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "stardust",
+      "index": 23,
+      "name": "Stardust",
+      "maker": "Stardust",
+      "makerSlug": "stardust",
+      "category": "tools",
+      "stackSlot": "intervention",
+      "price": 0,
+      "priceLabel": "Free tier, subscription",
+      "priceVerified": false,
+      "url": "https://stardust.app/",
+      "intents": [
+        "protect-my-data"
+      ],
+      "summary": "Cycle tracking that treats your body data as legally dangerous. Because it is.",
+      "argument": "Period apps are the sharpest test of whether a privacy claim means anything, because this data can be subpoenaed in ways step counts cannot. Encryption is the entire feature.",
+      "caution": "Has faced public questions about its data-sharing stance. Read the current policy yourself before trusting it.",
+      "specs": {
+        "Tracks": "Cycle, hormones, ovulation",
+        "Privacy": "Encrypted",
+        "Built by": "Women-led team"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "sublime",
+      "index": 24,
+      "name": "Sublime",
+      "maker": "Sublime",
+      "makerSlug": "sublime",
+      "category": "tools",
+      "stackSlot": "intervention",
+      "price": 0,
+      "priceLabel": "Free tier, subscription",
+      "priceVerified": false,
+      "url": "https://sublime.app/",
+      "intents": [
+        "keep-what-i-find"
+      ],
+      "summary": "The feed, inverted. It shows you what you already chose.",
+      "argument": "Instead of an algorithm deciding what comes next, it resurfaces the things you decided were worth keeping. Collecting as a practice rather than a hoard.",
+      "specs": {
+        "Use": "Save, connect and resurface",
+        "Feel": "Ambient, slow",
+        "Model": "Freemium"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "are-na",
+      "index": 25,
+      "name": "Are.na",
+      "maker": "Are.na",
+      "makerSlug": "are-na",
+      "category": "tools",
+      "stackSlot": "intervention",
+      "price": 0,
+      "priceLabel": "Free tier, $7/mo premium",
+      "priceVerified": false,
+      "url": "https://www.are.na/",
+      "intents": [
+        "keep-what-i-find",
+        "own-my-work"
+      ],
+      "summary": "No likes, no ads, no algorithm. Fourteen years and counting.",
+      "argument": "Are.na is the longest-running proof that a social tool can survive without engagement mechanics. There is nothing to perform for, so people use it to think instead — which is what everyone claims they want and almost nobody builds.",
+      "caution": "The blank canvas is intimidating. Give it a few weeks.",
+      "specs": {
+        "Model": "Member-funded",
+        "Metrics": "None",
+        "Ads": "None",
+        "Since": "2011"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "duckduckgo",
+      "index": 26,
+      "name": "DuckDuckGo",
+      "maker": "DuckDuckGo",
+      "makerSlug": "duckduckgo",
+      "category": "tools",
+      "stackSlot": "intervention",
+      "price": 0,
+      "priceLabel": "Free",
+      "priceVerified": false,
+      "url": "https://duckduckgo.com/",
+      "intents": [
+        "protect-my-data"
+      ],
+      "summary": "The one-minute switch.",
+      "argument": "Lowest-effort move on this entire site. It is free, it takes sixty seconds, and it ends a tracking relationship you never actually agreed to.",
+      "caution": "Weaker than Google on local and technical searches.",
+      "specs": {
+        "Products": "Search, browser, email protection",
+        "Tracking": "None",
+        "Price": "Free"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "plausible",
+      "index": 27,
+      "name": "Plausible",
+      "maker": "Plausible",
+      "makerSlug": "plausible",
+      "category": "tools",
+      "stackSlot": "intervention",
+      "price": 0,
+      "priceLabel": "From ~$9/mo",
+      "priceVerified": false,
+      "url": "https://plausible.io/",
+      "intents": [
+        "protect-my-data",
+        "own-my-work"
+      ],
+      "summary": "If you run a site in this movement, stop loading Google Analytics on it.",
+      "argument": "Open source, no cookies, no consent banner, no surveillance of the people reading you. This is the listing for the builders — the credibility test nobody talks about.",
+      "caution": "For site owners, not readers. Paid, because you are the customer instead of the product.",
+      "specs": {
+        "Open source": "Yes",
+        "Cookies": "None",
+        "Hosting": "EU",
+        "Model": "Paid"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "dayflow",
+      "index": 28,
+      "name": "Dayflow",
+      "maker": "Dayflow",
+      "makerSlug": "dayflow",
+      "category": "tools",
+      "stackSlot": "intervention",
+      "price": 0,
+      "priceLabel": "Free, open source",
+      "priceVerified": false,
+      "url": "https://www.dayflow.so/",
+      "intents": [
+        "keep-what-i-find"
+      ],
+      "summary": "Find out where the time actually went, without shipping your screen anywhere.",
+      "argument": "You cannot change a day you cannot see, and every other tool offering this sends your screen to somebody's server. This one keeps the recording on your Mac and is open source, so that claim is checkable.",
+      "caution": "Local AI wants a capable Mac; the cloud option reopens the privacy question.",
+      "specs": {
+        "Platform": "macOS",
+        "Data": "Stays local by default",
+        "Licence": "Open source",
+        "Price": "Free"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "pampam",
+      "index": 29,
+      "name": "Pam Pam",
+      "maker": "Pam Pam",
+      "makerSlug": "pampam",
+      "category": "tools",
+      "stackSlot": "intervention",
+      "price": 0,
+      "priceLabel": "Free tier",
+      "priceVerified": false,
+      "url": "https://www.pampam.city/",
+      "intents": [
+        "be-present",
+        "joy-online"
+      ],
+      "summary": "A map made by a person who knows you. The opposite of a recommendation engine.",
+      "argument": "Local knowledge that has not been monetised, ranked or sponsored — just somewhere a friend actually likes. Make one for a city, a trip, or an afternoon.",
+      "specs": {
+        "Makes": "Custom and travel maps",
+        "Shareable": "Yes",
+        "Model": "Freemium"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "block-party",
+      "index": 30,
+      "name": "Block Party",
+      "maker": "Block Party",
+      "makerSlug": "block-party",
+      "category": "tools",
+      "stackSlot": "intervention",
+      "price": 0,
+      "priceLabel": "Subscription",
+      "priceVerified": false,
+      "url": "https://www.blockpartyapp.com/",
+      "intents": [
+        "protect-my-data"
+      ],
+      "summary": "Deep-clean your accounts without deleting them.",
+      "argument": "For the large, sane group who are not leaving the platforms but want the harassment surface and the data exposure cut down. Harm reduction, not ideology.",
+      "caution": "It operates inside platforms that keep changing the rules. Coverage shifts.",
+      "specs": {
+        "Cleans": "Settings, notifications, exposure",
+        "Model": "Subscription"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "metalabel",
+      "index": 31,
+      "name": "Metalabel",
+      "maker": "Metalabel",
+      "makerSlug": "metalabel",
+      "category": "tools",
+      "stackSlot": "intervention",
+      "price": 0,
+      "priceLabel": "See maker",
+      "priceVerified": false,
+      "url": "https://www.metalabel.com/",
+      "intents": [
+        "own-my-work"
+      ],
+      "summary": "A record label small enough for one release and three friends.",
+      "argument": "Sooner or later this movement hits the question nobody wants to answer: if not the platforms, then how does anyone get paid? Metalabel is one of the few real attempts at a reply.",
+      "specs": {
+        "For": "Groups releasing work",
+        "Format": "Editions and drops",
+        "Model": "Platform"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "cultural-ip",
+      "index": 32,
+      "name": "Cultural IP",
+      "maker": "Cultural IP",
+      "makerSlug": "cultural-ip",
+      "category": "tools",
+      "stackSlot": "intervention",
+      "price": 0,
+      "priceLabel": "See maker",
+      "priceVerified": false,
+      "url": "https://www.culturalip.world/",
+      "intents": [
+        "own-my-work"
+      ],
+      "summary": "Check who owns your work before it leaves the house.",
+      "argument": "AI training made ownership urgent and the advice is all written for lawyers. This one is aimed at the person actually making the thing.",
+      "caution": "Early. Guidance, not legal advice.",
+      "specs": {
+        "For": "Creators and makers",
+        "Covers": "IP checks before release"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "softer",
+      "index": 33,
+      "name": "Softer",
+      "maker": "Softer",
+      "makerSlug": "softer",
+      "category": "studios",
+      "stackSlot": "workshop",
+      "price": 0,
+      "priceLabel": "Community",
+      "priceVerified": false,
+      "url": "https://www.softer.global/",
+      "intents": [
+        "learn-the-field",
+        "be-present"
+      ],
+      "summary": "A movement for softer digital futures.",
+      "argument": "Most groups in this space organise around what technology should do. Softer organises around how it should feel, which is a harder question and a better one.",
+      "specs": {
+        "Type": "Movement / community",
+        "Focus": "Softer digital futures"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "aixdesign",
+      "index": 34,
+      "name": "AIxDESIGN",
+      "maker": "AIxDESIGN",
+      "makerSlug": "aixdesign",
+      "category": "studios",
+      "stackSlot": "workshop",
+      "price": 0,
+      "priceLabel": "Non-profit",
+      "priceVerified": false,
+      "url": "https://aixdesign.co/",
+      "intents": [
+        "learn-the-field"
+      ],
+      "summary": "Learning AI from people with nothing to sell you.",
+      "argument": "A non-profit community of designers, artists and researchers working in public. Genuinely the most useful place on this list to understand the field without a product pitch attached.",
+      "specs": {
+        "Type": "Non-profit community",
+        "Who": "Designers, artists, technologists",
+        "Focus": "Public-interest AI"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "kanso",
+      "index": 35,
+      "name": "Kanso",
+      "maker": "Kanso",
+      "makerSlug": "kanso",
+      "category": "studios",
+      "stackSlot": "workshop",
+      "price": 0,
+      "priceLabel": "Events + products",
+      "priceVerified": false,
+      "url": "https://kansodigitalwellness.com/",
+      "intents": [
+        "be-present",
+        "leave-it-home"
+      ],
+      "summary": "Sells you the evening, not the gadget.",
+      "argument": "Phone-free experiences plus the objects that go with them — the assembled-life model already working in physical space. Simultaneously the closest thing here to a competitor and the most obvious collaborator.",
+      "specs": {
+        "Offers": "Phone-free events, products",
+        "Focus": "Intentional living"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "mindful-media",
+      "index": 36,
+      "name": "Mindful Media",
+      "maker": "Mindful Media",
+      "makerSlug": "mindful-media",
+      "category": "studios",
+      "stackSlot": "workshop",
+      "price": 0,
+      "priceLabel": "501(c)(3)",
+      "priceVerified": false,
+      "url": "https://www.mindfulmedia.org/",
+      "intents": [
+        "household",
+        "learn-the-field"
+      ],
+      "summary": "The research end of all this, with no product attached.",
+      "argument": "A foundation working on childhood and screens through evidence and policy rather than vibes. If you are a parent, this is the listing whose claims you can actually check.",
+      "specs": {
+        "Type": "501(c)(3) foundation",
+        "Work": "Research, ethical tech, access",
+        "For": "Childhood and screens"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "metawell",
+      "index": 37,
+      "name": "Meta Well",
+      "maker": "Meta Well",
+      "makerSlug": "metawell",
+      "category": "studios",
+      "stackSlot": "workshop",
+      "price": 0,
+      "priceLabel": "Toolkit",
+      "priceVerified": false,
+      "url": "https://metawell.online/",
+      "intents": [
+        "stop-the-scroll",
+        "learn-the-field"
+      ],
+      "summary": "A toolkit for digital dependence that does not start with abstinence.",
+      "argument": "Framed around health and productivity instead of quitting, which makes it a far easier on-ramp than most of the detox material aimed at the same person.",
+      "caution": "Early-stage. Verify what actually ships today.",
+      "specs": {
+        "Type": "Toolkit",
+        "Focus": "Digital dependence"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "the-modems",
+      "index": 38,
+      "name": "The Modems",
+      "maker": "The Modems",
+      "makerSlug": "the-modems",
+      "category": "voices",
+      "stackSlot": "workshop",
+      "price": 0,
+      "priceLabel": "Free to read",
+      "priceVerified": false,
+      "url": "https://themodems.com/",
+      "intents": [
+        "learn-the-field"
+      ],
+      "summary": "Proof that people will read about technology as culture.",
+      "argument": "Gadgets through a fashion and beauty lens, and it works. It is also the clearest gap in the market: they earn the attention and then send the reader somewhere else to buy.",
+      "specs": {
+        "Covers": "Fashion tech, beauty tech, founders",
+        "Model": "Affiliate and brand partnerships"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "quiet-media",
+      "index": 39,
+      "name": "Quiet Media",
+      "maker": "Charlotte Rubesa",
+      "makerSlug": "quiet-media",
+      "category": "voices",
+      "stackSlot": "workshop",
+      "price": 0,
+      "priceLabel": "Print zine",
+      "priceVerified": false,
+      "url": "https://quietmedia.substack.com/",
+      "intents": [
+        "learn-the-field",
+        "stop-the-scroll"
+      ],
+      "summary": "A paper zine arguing for paper. Correct format, correct argument.",
+      "argument": "Independent, first issue out, and exactly the kind of voice this index should be amplifying rather than competing with.",
+      "specs": {
+        "Format": "Print zine",
+        "By": "Charlotte Rubesa",
+        "Status": "Issue one available"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "marin-tech-guides",
+      "index": 40,
+      "name": "Marin Tech Guides",
+      "maker": "Marin Tech Guides",
+      "makerSlug": "marin-tech-guides",
+      "category": "voices",
+      "stackSlot": "workshop",
+      "price": 0,
+      "priceLabel": "Per session",
+      "priceVerified": false,
+      "url": "https://www.marintechguides.com/",
+      "intents": [
+        "household",
+        "learn-the-field"
+      ],
+      "summary": "A patient human who sets it up with you, in your house.",
+      "argument": "This is the service layer nobody in this movement builds, and it is the whole ballgame for anyone over sixty or anyone with a new phone and no confidence. The template for the IRL tech consultant role.",
+      "caution": "Marin County, California only. The model travels; the service does not yet.",
+      "specs": {
+        "Format": "In-home, one-on-one",
+        "Where": "Marin County, CA",
+        "For": "Anyone, at any pace"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "conscious-stack",
+      "index": 41,
+      "name": "Conscious Stack",
+      "maker": "Conscious Stack",
+      "makerSlug": "conscious-stack",
+      "category": "workshop",
+      "stackSlot": "workshop",
+      "price": 0,
+      "priceLabel": "Free tool",
+      "priceVerified": false,
+      "url": "https://www.consciousstack.com/",
+      "intents": [
+        "make-it-yourself",
+        "learn-the-field"
+      ],
+      "summary": "One anchor, three active, five support. Then stop.",
+      "argument": "A stack builder with a constraint, which is smarter than ours — the 1:3:5 rule forces a hierarchy instead of letting you collect tools forever.",
+      "caution": "Direct prior art for the stack builder on this site. Read it as a partner, not a rival.",
+      "specs": {
+        "Protocol": "1:3:5 — one anchor, three active, five support",
+        "Shows": "Cognitive load before you commit",
+        "Price": "Free"
+      },
+      "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "itheme-design",
+      "index": 42,
+      "name": "iTheme Design",
+      "maker": "iTheme Design",
+      "makerSlug": "itheme-design",
+      "category": "workshop",
+      "stackSlot": "workshop",
+      "price": 0,
+      "priceLabel": "See maker",
+      "priceVerified": false,
+      "url": "https://ithemedesign.com/",
+      "intents": [
+        "make-it-yourself"
+      ],
+      "summary": "Style the phone you already have.",
+      "argument": "The expressive counter-argument to greyscale. If self-expression is the on-ramp to this whole movement, customising the device in your pocket is the cheapest first step there is.",
+      "caution": "The site gives little away. Worth a direct conversation before featuring.",
+      "specs": {
+        "Makes": "Lock screen / phone aesthetics",
+        "For": "Personalising what you own"
+      },
+      "source": "founder doc, Sept 2026"
+    }
+  ]
+}

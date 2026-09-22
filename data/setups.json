@@ -1,0 +1,148 @@
+{
+  "setups": [
+    {
+      "slug": "night-out",
+      "index": 1,
+      "title": "The night out.",
+      "who": "For anyone who wants to be at the party, not documenting it.",
+      "dek": "Reachable if the plan changes, a camera that doesn't post, and a room that's loud but not too loud.",
+      "situation": "You go out to be somewhere. Then you spend half the night on your phone looking at the place you're standing in. The phone isn't evil; it's just the most interesting thing in the room. Until you leave it in the bag.",
+      "pieces": [
+        {
+          "slug": "light-phone-iii",
+          "role": "The phone",
+          "why": "Calls, texts, maps and a camera. Small enough for a clutch, boring enough to stay in it."
+        },
+        {
+          "slug": "camp-snap",
+          "role": "The camera",
+          "why": "Take the photos. See them tomorrow. Nobody gets a story tonight."
+        },
+        {
+          "slug": "loop-earplugs",
+          "role": "The earrings",
+          "why": "The loudest room made survivable, and they look like jewellery, so you'll actually wear them."
+        },
+        {
+          "slug": "ohmni",
+          "role": "The bag",
+          "why": "Blocks tracking by design. The phone goes in; the signal stays out when you want it to."
+        }
+      ],
+      "extras": [
+        "genic",
+        "poolsuite"
+      ],
+      "breaks": "Rideshare and splitting the bill. Book the car before you go in, and let one friend run the payment app. Everyone has done it for someone before.",
+      "change": "Next time, leave the phone in the bag for the first hour and see who notices."
+    },
+    {
+      "slug": "feed-quitters",
+      "index": 2,
+      "title": "Quitting the feed, together.",
+      "who": "For two adults who keep catching each other scrolling.",
+      "dek": "Nobody wants to quit alone and become the boring one. So you do it as a pair.",
+      "situation": "It's 10pm, you're both on the couch, and both of you are watching strangers cook. Quitting solo fails because the other phone is right there, glowing. Doing it together turns it into a house rule instead of a personal failing.",
+      "pieces": [
+        {
+          "slug": "punkt-mp02",
+          "role": "The phone",
+          "why": "Encrypted calls and texts, a hotspot for the laptop, and typing so bad you'll call instead."
+        },
+        {
+          "slug": "brick",
+          "role": "The lock",
+          "why": "One magnet by the front door. Both phones tap out on the way in."
+        },
+        {
+          "slug": "are-na",
+          "role": "Where the good stuff goes",
+          "why": "The links you'd have sent each other on Instagram live here now. No likes, no feed."
+        },
+        {
+          "slug": "poolsuite",
+          "role": "The soundtrack",
+          "why": "Something on in the kitchen that isn't trying to keep you."
+        }
+      ],
+      "extras": [
+        "camp-snap",
+        "pampam"
+      ],
+      "breaks": "Two-factor codes, ride-hailing and the one friend who only uses WhatsApp. Keep one old smartphone in a drawer as the household utility device. It lives there, not in a pocket.",
+      "change": "Month two: add a Camp Snap and stop photographing dinner for anyone but yourselves."
+    },
+    {
+      "slug": "the-writer",
+      "index": 3,
+      "title": "The writer who keeps opening tabs.",
+      "who": "For anyone whose draft is one browser tab from being abandoned.",
+      "dek": "The words were never the problem. The forty-one other things a laptop offers every eight seconds are.",
+      "situation": "You sit down to write, open the doc, and then open a tab to check one thing. Ninety minutes later the doc is still blank. The fix isn't discipline. It's a desk where the internet physically isn't.",
+      "pieces": [
+        {
+          "slug": "freewrite-alpha",
+          "role": "The machine",
+          "why": "A keyboard with nowhere to go. Drafts sync out; nothing syncs in."
+        },
+        {
+          "slug": "freedom",
+          "role": "The lock",
+          "why": "For when you have to use the laptop anyway: everything blocked, every device, same schedule."
+        },
+        {
+          "slug": "daylight-dc-1",
+          "role": "The reading",
+          "why": "Research and edits on paper-feel glass, outside, in actual sunlight."
+        },
+        {
+          "slug": "rocketbook",
+          "role": "The notebook",
+          "why": "Plot by hand, search it later, wipe it, start again."
+        }
+      ],
+      "extras": [
+        "loop-earplugs",
+        "dayflow"
+      ],
+      "breaks": "Research. You'll need the internet eventually. Batch it: one hour a day, on the laptop, with Freedom deciding when it ends.",
+      "change": "If $729 stings, drop the Daylight and get a library card."
+    },
+    {
+      "slug": "first-phone",
+      "index": 4,
+      "title": "The first phone.",
+      "who": "For a 12-year-old, and the two adults deciding for them.",
+      "dek": "Reachable after practice, no browser in the pocket, and a camera that doesn't come with an audience.",
+      "situation": "They need to reach you after practice. You don't want a browser in their pocket. Every other kid in the class has an iPhone, and you will hear about it daily. The trick is making the alternative feel like a choice they'd brag about, not a punishment they have to explain.",
+      "pieces": [
+        {
+          "slug": "light-flip",
+          "role": "The phone",
+          "why": "Calls, texts, no browser. In yellow, so it reads as a flex rather than a sentence."
+        },
+        {
+          "slug": "camp-snap",
+          "role": "The camera",
+          "why": "They still take photos. Nobody sees them until you get home, including them."
+        },
+        {
+          "slug": "aro-box",
+          "role": "Where phones sleep",
+          "why": "Every phone in the house charges here overnight. Yours too, or none of this works."
+        },
+        {
+          "slug": "mindful-media",
+          "role": "The reading",
+          "why": "For the parents. Research instead of vibes, for when the group chat starts citing articles."
+        }
+      ],
+      "extras": [
+        "brick",
+        "loop-earplugs"
+      ],
+      "breaks": "They'll be the only one outside the class group chat. Most families solve it with one shared tablet for messages at the kitchen table: visible, time-boxed, never in a bedroom.",
+      "change": "At 14, trade the Flip for a Clicks Communicator or a Light Phone III, and let them earn the upgrade."
+    }
+  ]
+}
