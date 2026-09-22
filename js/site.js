@@ -10,10 +10,11 @@ const COLL = {
   tools:    { name: 'Tools',    c: '#8C9EFF', v: '' },
   workshop: { name: 'Workshop', c: '#000000', v: 'ink' },
   studios:  { name: 'Studios',  c: '#E1D2F3', v: '' },
-  voices:   { name: 'Voices',   c: '#F9F8F3', v: 'paper' }
+  voices:   { name: 'Voices',   c: '#F9F8F3', v: 'paper' },
+  wear:     { name: 'Wear',     c: '#EEFF00', v: '' }
 };
-const ORDER = ['phones', 'objects', 'tools', 'workshop', 'studios', 'voices'];
-const REP = { phones: 'light-phone-iii', objects: 'loop-earplugs', tools: 'are-na', workshop: 'uconsole', studios: 'kanso', voices: 'quiet-media' };
+const ORDER = ['phones', 'objects', 'tools', 'workshop', 'studios', 'voices', 'wear'];
+const REP = { phones: 'light-phone-iii', objects: 'loop-earplugs', tools: 'are-na', workshop: 'uconsole', studios: 'kanso', voices: 'quiet-media', wear: 'ipod-print-mini-skirt' };
 const NEON = ['#DCFC73', '#F06038', '#8C9EFF', '#E1D2F3'];
 const HEART = '<svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>';
 
@@ -137,9 +138,10 @@ function pageHome() {
   ${marquee(ORDER.map(k => COLL[k].name).concat(['Less detox, more design']))}
   <section class="sec" id="collections"><div class="wrap">
     ${secHead('Collections', 'Six collections, one shelf.', 'Four wear a neon. Workshop and Voices wear black and white, like raw stock and newsprint.')}
-    <div class="colls">${ORDER.map(k => {
+    <div class="colls">${ORDER.map((k, i) => {
       const p = DB.p(REP[k]); const n = DB.products.filter(x => x.category === k).length;
-      return `<a class="coll lift" href="directory.html#c=${k}">
+      const wide = i === ORDER.length - 1 && i % 3 === 0;
+      return `<a class="coll lift${wide ? ' wide' : ''}" href="directory.html#c=${k}">
         <span class="plate"><span class="floor"></span><span class="ui shot">Collection</span><span class="ui idx">${pad(n)}</span>${p ? pouch(p) : ''}</span>
         <span class="coll-cap"><span><span class="d-m">${COLL[k].name}</span><p class="blurb">${esc(DB.blurb(k))}</p></span><span class="ui"><span>${pad(n)}</span><span class="dim">entries</span></span></span>
       </a>`; }).join('')}</div>

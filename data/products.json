@@ -57,6 +57,15 @@
       "accent": "#69DFC0",
       "ink": "#06201A",
       "tint": "rgba(105,223,192,0.14)"
+    },
+    {
+      "id": "wear",
+      "name": "Wear",
+      "blurb": "Tech as a look, not a tool. Worn on purpose.",
+      "glyph": "box",
+      "accent": "#EEFF00",
+      "ink": "#141400",
+      "tint": "rgba(238,255,0,0.14)"
     }
   ],
   "intents": [
@@ -115,6 +124,10 @@
     {
       "id": "learn-the-field",
       "label": "Learn the field"
+    },
+    {
+      "id": "wear-it",
+      "label": "Wear the argument"
     }
   ],
   "products": [
@@ -462,15 +475,16 @@
       "name": "Genic",
       "maker": "GENIC",
       "makerSlug": "genic",
-      "category": "objects",
-      "stackSlot": "companion",
+      "category": "wear",
+      "stackSlot": "wear",
       "price": 0,
       "priceLabel": "Capsule drops",
       "priceVerified": false,
       "url": "https://genic.film/pages/events",
       "intents": [
         "camera-not-feed",
-        "keep-what-i-find"
+        "keep-what-i-find",
+        "wear-it"
       ],
       "summary": "A wearable memory archive, sold in numbered capsules. LA to Seoul.",
       "argument": "Memory as something you wear and keep, not something you upload and lose. It is also the only proof in this index that this category can be sold like fashion — drops, queues, editions — which nobody else here has tried.",
@@ -1184,6 +1198,33 @@
         "For": "Personalising what you own"
       },
       "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "ipod-print-mini-skirt",
+      "index": 43,
+      "name": "iPod Print Mini Skirt",
+      "maker": "Norgira",
+      "makerSlug": "norgira",
+      "category": "wear",
+      "stackSlot": "wear",
+      "price": 67,
+      "priceLabel": "$67",
+      "priceVerified": true,
+      "url": "https://pixierebels.com/products/ipod-print-mini-skirt",
+      "intents": [
+        "wear-it",
+        "joy-online"
+      ],
+      "summary": "A bodycon mini printed with an iPod. The last good interface, worn as a graphic.",
+      "argument": "Everything else on this site changes what you do. This changes what you say: that choosing your technology is an aesthetic, not a punishment. Mourning a device that did one thing beautifully is the whole argument here, printed on a skirt.",
+      "caution": "Made by Norgira, sold through Pixie Rebels, and their own listing is tagged as delayed more than once. Order early or not at all.",
+      "specs": {
+        "Made by": "Norgira",
+        "Sold by": "Pixie Rebels",
+        "Sizes": "S, M, L",
+        "Fabric": "41% cotton, 41% lyocell, 18% polyester"
+      },
+      "source": "maker store, Sept 2026"
     }
   ]
 }

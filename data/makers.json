@@ -580,6 +580,20 @@
       "story": null,
       "whyHere": null,
       "source": "founder doc, Sept 2026"
+    },
+    {
+      "slug": "norgira",
+      "name": "Norgira",
+      "people": null,
+      "role": "Maker",
+      "location": "—",
+      "url": "https://pixierebels.com/products/ipod-print-mini-skirt",
+      "featured": false,
+      "verified": false,
+      "blurb": "Rule-free clubwear and print pieces, stocked through Pixie Rebels.",
+      "story": null,
+      "whyHere": null,
+      "source": "maker store, Sept 2026"
     }
   ]
 }

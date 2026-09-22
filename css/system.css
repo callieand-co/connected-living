@@ -509,3 +509,10 @@ a { text-decoration: none; }
 
 .setups.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 @media (max-width: 620px) { .setups.two { grid-template-columns: 1fr; } }
+
+/* a collection alone in the last row runs full width instead of leaving a gap */
+.coll.wide { grid-column: 1 / -1; flex-direction: row; align-items: stretch; }
+.coll.wide .plate { width: 38%; aspect-ratio: auto; border-bottom: 0; border-right: 1px solid var(--edge); }
+.coll.wide .plate .pouch { width: 22%; }
+.coll.wide .coll-cap { flex: 1; align-items: center; padding: 26px 24px; }
+@media (max-width: 980px) { .coll.wide { flex-direction: column; } .coll.wide .plate { width: 100%; aspect-ratio: 5 / 4; border-right: 0; border-bottom: 1px solid var(--edge); } .coll.wide .coll-cap { align-items: end; padding: 14px 16px 16px; } }
