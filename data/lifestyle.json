@@ -1,0 +1,95 @@
+{
+  "meta": { "version": "v1", "note": "Six questions, one plan. Tags drive the automations, intention and picks." },
+  "questions": [
+    { "id": "time", "kicker": "The audit", "q": "Where does the day actually go?",
+      "options": [
+        { "label": "Inbox and messages", "tags": ["inbox"] },
+        { "label": "Meetings and calls", "tags": ["meetings"] },
+        { "label": "Scrolling, if I'm honest", "tags": ["scroll"] },
+        { "label": "Admin, errands, logistics", "tags": ["admin"] },
+        { "label": "Making things", "tags": ["making"] }
+      ] },
+    { "id": "morning", "kicker": "The audit", "q": "What happens in the first ten minutes awake?",
+      "options": [
+        { "label": "Phone, in bed", "tags": ["morning-phone"] },
+        { "label": "Coffee, then phone", "tags": ["morning-coffee"] },
+        { "label": "Out the door, moving", "tags": ["morning-move"] },
+        { "label": "Straight into work", "tags": ["morning-work"] }
+      ] },
+    { "id": "want", "kicker": "The goal", "q": "What do you want more of?",
+      "options": [
+        { "label": "Time to make things", "tags": ["want-make"] },
+        { "label": "Time with people", "tags": ["want-people"] },
+        { "label": "Rest, actual rest", "tags": ["want-rest"] },
+        { "label": "Deep focus", "tags": ["want-focus"] },
+        { "label": "Money that isn't hours", "tags": ["want-money"] }
+      ] },
+    { "id": "chore", "kicker": "The delegation", "q": "Which task do you resent most?",
+      "options": [
+        { "label": "Scheduling and back-and-forth", "tags": ["chore-scheduling"] },
+        { "label": "Invoices, expenses, admin", "tags": ["chore-admin"] },
+        { "label": "Research and reading", "tags": ["chore-research"] },
+        { "label": "Posting and content", "tags": ["chore-content"] },
+        { "label": "Inbox triage", "tags": ["chore-inbox"] }
+      ] },
+    { "id": "ai", "kicker": "The delegation", "q": "How much should a machine touch it?",
+      "options": [
+        { "label": "Delegate anything that isn't judgement", "tags": ["ai-3"], "level": 3 },
+        { "label": "Drafts only. I edit everything", "tags": ["ai-2"], "level": 2 },
+        { "label": "Only if it stays on my device", "tags": ["ai-1"], "level": 1 },
+        { "label": "I'd rather change the system than automate it", "tags": ["ai-0"], "level": 0 }
+      ] },
+    { "id": "goal", "kicker": "The intention", "q": "What are the next ninety days for?",
+      "options": [
+        { "label": "Shipping one thing", "tags": ["goal-ship"] },
+        { "label": "Being present with people", "tags": ["goal-present"] },
+        { "label": "Getting an hour a day back", "tags": ["goal-hour"] },
+        { "label": "Spending less of it online", "tags": ["goal-offline"] },
+        { "label": "Getting organised, finally", "tags": ["goal-organised"] }
+      ] }
+  ],
+  "automations": [
+    { "tags": ["chore-scheduling"], "level": 0, "title": "Kill the back-and-forth", "how": "Publish one booking link with your real availability and send it instead of proposing times. No AI required, and it removes about four emails per meeting.", "effort": "20 min" },
+    { "tags": ["chore-scheduling"], "level": 2, "title": "Let a draft reply propose the times", "how": "Assistant drafts the reply with two slots pulled from your calendar. You read it, you send it. Never let it send unread.", "effort": "30 min" },
+    { "tags": ["chore-inbox", "inbox"], "level": 0, "title": "Two inbox windows a day", "how": "Eleven and four. Close the tab in between. Most of what feels urgent resolves itself inside three hours.", "effort": "0 min" },
+    { "tags": ["chore-inbox", "inbox"], "level": 2, "title": "A morning triage pass you approve", "how": "One pass sorts the inbox into reply, read, ignore, and drafts the three easy replies. You approve each one. Nothing leaves without you.", "effort": "45 min" },
+    { "tags": ["chore-admin", "admin"], "level": 1, "title": "One folder, one rule", "how": "Every receipt goes to one folder the moment it arrives. A monthly pass turns it into a spreadsheet. The discipline is the capture, not the sorting.", "effort": "15 min" },
+    { "tags": ["chore-admin", "admin"], "level": 3, "title": "Invoices on a schedule, not a mood", "how": "Recurring invoices generate and send themselves on the first. Late nudges go out on day seven without you having to feel awkward about it.", "effort": "1 hr" },
+    { "tags": ["chore-research"], "level": 2, "title": "Summarise, then verify", "how": "Ask for a summary with sources listed, then open two of them. The summary saves the reading; the two links save you from repeating something wrong.", "effort": "10 min" },
+    { "tags": ["chore-research"], "level": 1, "title": "Read once, keep forever", "how": "Everything worth keeping goes to one place you actually revisit. Are.na and Sublime are both in the index for this.", "effort": "20 min" },
+    { "tags": ["chore-content"], "level": 2, "title": "Batch the posting, keep the voice", "how": "One session a week: you write the ideas, a draft pass turns each into three formats, you rewrite the openings. The first line is the only part that matters.", "effort": "1 hr/wk" },
+    { "tags": ["chore-content"], "level": 0, "title": "Post from a queue, not an impulse", "how": "Write in a document, schedule from the queue, never open the app to post. The app is where the hour goes.", "effort": "30 min" },
+    { "tags": ["scroll", "morning-phone"], "level": 0, "title": "Move the first ten minutes", "how": "Charger out of the bedroom, alarm that isn't a phone. The morning scroll isn't a habit, it's a location problem.", "effort": "5 min" },
+    { "tags": ["scroll"], "level": 0, "title": "Put friction where the hand goes", "how": "A breath before the app opens, and a physical lock for the hours that matter. one sec and Brick, both in the index.", "effort": "15 min" },
+    { "tags": ["meetings"], "level": 0, "title": "Default to twenty-five minutes", "how": "Change your default meeting length and add a no-meeting block. You'll reclaim the day in five-minute pieces.", "effort": "10 min" },
+    { "tags": ["meetings"], "level": 2, "title": "Notes and actions, written for you", "how": "Let the notes get taken so you can look at people. Read the actions the same day, while you still remember what was meant.", "effort": "20 min" },
+    { "tags": ["making", "want-make"], "level": 1, "title": "Protect one making block", "how": "Two hours, same time, in the calendar as a real event. Everything else negotiates around it. Guard it like a client call.", "effort": "5 min" },
+    { "tags": ["want-money"], "level": 3, "title": "Package the thing you repeat", "how": "The task you've done five times is a product. Write it once, price it, automate the delivery. That's the hour that stops being hours.", "effort": "2 hrs" },
+    { "tags": ["want-rest", "want-people"], "level": 0, "title": "One evening nobody can book", "how": "Block it, name it, decline into it. Rest that isn't scheduled gets eaten by everything that is.", "effort": "5 min" },
+    { "tags": ["want-focus"], "level": 1, "title": "See where it actually went", "how": "Track a normal week before changing anything. Dayflow does it locally, on your own machine. You cannot fix a day you can't see.", "effort": "1 wk" }
+  ],
+  "intentions": {
+    "goal-ship": { "line": "Ship the one thing.", "body": "Everything else is negotiable for ninety days. Pick the single thing that would make the quarter count, and let the automations buy back the hours to build it." },
+    "goal-present": { "line": "Be where your feet are.", "body": "The goal isn't less screen time, it's more of the other thing. Put the phone somewhere specific when you get home, and give the evening to whoever is in the room." },
+    "goal-hour": { "line": "Buy back an hour a day.", "body": "One hour a day is six working weeks a year. Take it from the task you resent most, not from sleep, and spend it on something you'd be proud to name." },
+    "goal-offline": { "line": "Spend less of it online.", "body": "Not a detox. A swap. Every hour you take off the feed needs somewhere better to go, or it comes straight back." },
+    "goal-organised": { "line": "One system, honestly used.", "body": "The problem was never the app. Pick one place for things to land, make capture effortless, and let the sorting happen weekly instead of constantly." }
+  },
+  "picks": {
+    "scroll": ["one-sec", "brick", "light-flip"],
+    "inbox": ["freedom", "dayflow", "opal"],
+    "chore-inbox": ["freedom", "block-party", "opal"],
+    "meetings": ["dayflow", "loop-earplugs", "daylight-dc-1"],
+    "admin": ["dayflow", "rocketbook", "plausible"],
+    "making": ["freewrite-alpha", "are-na", "uconsole"],
+    "morning-phone": ["aro-box", "brick", "camp-snap"],
+    "want-make": ["freewrite-alpha", "rocketbook", "are-na"],
+    "want-people": ["camp-snap", "aro-box", "pampam"],
+    "want-rest": ["loop-earplugs", "poolsuite", "daylight-dc-1"],
+    "want-focus": ["freedom", "forest", "daylight-dc-1"],
+    "want-money": ["metalabel", "cultural-ip", "plausible"],
+    "ai-1": ["dayflow", "duckduckgo", "plausible"],
+    "ai-0": ["brick", "punkt-mp02", "freewrite-alpha"]
+  },
+  "looks": { "goal-offline": "night-out", "goal-present": "feed-quitters", "goal-ship": "the-writer", "goal-hour": "the-writer", "goal-organised": "feed-quitters" }
+}

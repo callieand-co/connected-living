@@ -11,11 +11,11 @@ const COLL = {
   workshop: { name: 'Workshop', c: '#000000', v: 'ink' },
   studios:  { name: 'Studios',  c: '#E1D2F3', v: '' },
   voices:   { name: 'Voices',   c: '#F9F8F3', v: 'paper' },
-  wear:     { name: 'Wear',     c: '#EEFF00', v: '' }
+  wear:     { name: 'Wear',     c: '#FF3EA5', v: '' }
 };
 const ORDER = ['phones', 'objects', 'tools', 'workshop', 'studios', 'voices', 'wear'];
 const REP = { phones: 'light-phone-iii', objects: 'loop-earplugs', tools: 'are-na', workshop: 'uconsole', studios: 'kanso', voices: 'quiet-media', wear: 'ipod-print-mini-skirt' };
-const NEON = ['#DCFC73', '#F06038', '#8C9EFF', '#E1D2F3'];
+const NEON = ['#DCFC73', '#F06038', '#8C9EFF', '#E1D2F3', '#FF3EA5'];
 const HEART = '<svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>';
 
 const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -27,8 +27,8 @@ const priceShort = p => p.price > 0 ? money(p.price) : (p.priceLabel || 'See mak
 let DB;
 async function load() {
   const get = u => fetch(u).then(r => r.ok ? r.json() : {}).catch(() => ({}));
-  const [p, m, md, s] = await Promise.all([get('data/products.json'), get('data/makers.json'), get('data/media.json'), get('data/setups.json')]);
-  DB = { products: p.products || [], cats: p.categories || [], intents: p.intents || [], makers: m.makers || [], media: md.media || [], setups: s.setups || [] };
+  const [p, m, md, s, l] = await Promise.all([get('data/products.json'), get('data/makers.json'), get('data/media.json'), get('data/setups.json'), get('data/lifestyle.json')]);
+  DB = { products: p.products || [], cats: p.categories || [], intents: p.intents || [], makers: m.makers || [], media: md.media || [], setups: s.setups || [], life: l };
   DB.p = slug => DB.products.find(x => x.slug === slug);
   DB.intent = id => (DB.intents.find(i => i.id === id) || { label: id }).label;
   DB.blurb = id => (DB.cats.find(c => c.id === id) || {}).blurb || '';
@@ -85,8 +85,8 @@ function chrome() {
   const cur = h => nav === h ? ' aria-current="page"' : '';
   document.getElementById('top').outerHTML = `
   <header class="topbar">
-    <nav class="l" aria-label="Primary"><a class="ui" href="directory.html"${cur('index')}>&#9656; Index</a><a class="ui" href="./#collections">Collections</a><a class="ui" href="setup.html#s=night-out"${cur('setups')}>Fitting Room</a></nav>
-    <a class="mark" href="./">Connected Living</a>
+    <nav class="l" aria-label="Primary"><a class="ui" href="directory.html"${cur('index')}>&#9656; Index</a><a class="ui" href="./#collections">Collections</a><a class="ui" href="setup.html#s=night-out"${cur('setups')}>Fitting Room</a><a class="ui" href="lifestyle.html"${cur('lifestyle')}>Lifestyle.AI</a></nav>
+    <a class="mark" href="./">DISC</a>
     <div class="r"><a class="ui" href="directory.html">Search</a><span class="ui" id="savedCount">Saved (0)</span><button class="ui" id="themeBtn">Light / Dark</button></div>
   </header>`;
   document.getElementById('foot').outerHTML = `
@@ -99,8 +99,8 @@ function chrome() {
       <div><div class="h">Index</div><ul><li class="num">${DB.products.length} entries</li><li>${ORDER.length} collections</li><li>Est. 2026</li></ul></div>
       <div><div class="h">Studio</div><ul><li>Online &amp; IRL</li><li>Los Angeles</li></ul></div>
     </div>
-    <div class="giant" aria-hidden="true">Connected Living</div>
-    <div class="foot-bottom"><span class="ui dim">&copy; 2026 Connected Living &middot; Curated by DISC</span><span class="ui">DISC = Digital Independence Supply Co.</span></div>
+    <div class="giant" aria-hidden="true">DISC &nbsp;DISC &nbsp;DISC &nbsp;DISC</div>
+    <div class="foot-bottom"><span class="ui dim">&copy; 2026 Digital Independence Supply Co.</span><span class="ui">Curations for Connected Living</span></div>
   </div></footer>`;
   paintSaved();
   const root = document.documentElement;
@@ -118,9 +118,9 @@ function pageHome() {
   const featured = ['light-flip', 'loop-earplugs', 'are-na'].map(DB.p).filter(Boolean);
   document.getElementById('main').innerHTML = `
   <section class="hero"><div class="wrap">
-    <h1 class="sr-only">Connected Living, curated by DISC</h1>
-    <div class="hero-word d-xl" aria-hidden="true"><span class="spray b">Connected Living</span><span class="spray a">Connected Living</span><span class="crisp">Connected Living</span></div>
-    <p class="ui" style="margin-top:18px">Curated by DISC</p>
+    <h1 class="sr-only">Digital Independence Supply Co. — Curations for Connected Living</h1>
+    <div class="hero-word masthead" aria-hidden="true"><span class="spray b">Digital Independence Supply&nbsp;Co.</span><span class="spray a">Digital Independence Supply&nbsp;Co.</span><span class="crisp">Digital Independence Supply&nbsp;Co.</span></div>
+    <p class="ui" style="margin-top:18px">Curations for Connected Living</p>
     <div class="thesis">
       <h2 class="d-m">Less detox, more design.</h2>
       <div>
@@ -137,7 +137,7 @@ function pageHome() {
   </div></section>
   ${marquee(ORDER.map(k => COLL[k].name).concat(['Less detox, more design']))}
   <section class="sec" id="collections"><div class="wrap">
-    ${secHead('Collections', 'Six collections, one shelf.', 'Four wear a neon. Workshop and Voices wear black and white, like raw stock and newsprint.')}
+    ${secHead('Collections', 'Seven collections, one shelf.', 'Five wear a neon. Workshop and Voices wear black and white, like raw stock and newsprint.')}
     <div class="colls">${ORDER.map((k, i) => {
       const p = DB.p(REP[k]); const n = DB.products.filter(x => x.category === k).length;
       const wide = i === ORDER.length - 1 && i % 3 === 0;
@@ -217,7 +217,7 @@ function pageIndex() {
 /* ---------- PRODUCT ---------- */
 function pageObject() {
   const p = DB.p(params().get('i')) || DB.products[0];
-  document.title = `${p.name} — Connected Living`;
+  document.title = `${p.name} — DISC`;
   const k = COLL[p.category];
   const specs = Object.entries(p.specs || {}).slice(0, 3);
   const related = DB.products.filter(x => x.slug !== p.slug)
@@ -278,7 +278,7 @@ function pageObject() {
 /* ---------- SETUP (the fitting room) ---------- */
 function pageSetup() {
   const s = DB.setups.find(x => x.slug === params().get('s')) || DB.setups[0];
-  document.title = `${s.title.replace(/\.$/, '')} — Connected Living`;
+  document.title = `${s.title.replace(/\.$/, '')} — DISC`;
   const pieces = s.pieces.map(x => ({ ...x, p: DB.p(x.slug) })).filter(x => x.p);
   const extras = (s.extras || []).map(DB.p).filter(Boolean);
   const glow = (pieces.map(x => COLL[x.p.category].c).find(c => NEON.includes(c))) || NEON[0];
@@ -374,8 +374,113 @@ function pageSetup() {
   window.onhashchange = () => { pageSetup(); scrollTo(0, 0); };
 }
 
+
+/* ---------- LIFESTYLE.AI — the audit, as a quiz ---------- */
+function pageLifestyle() {
+  const L = DB.life || {};
+  const Q = L.questions || [];
+  const answers = [];
+  const main = document.getElementById('main');
+
+  const header = `
+  <section class="page-head"><div class="wrap">
+    <span class="ui dim">Lifestyle.AI &middot; ${esc(L.meta ? L.meta.version : 'v1')}</span>
+    <div class="hero-word d-l" style="margin-top:14px">
+      <span class="spray a" aria-hidden="true" style="color:var(--pink)">Lifestyle.AI</span>
+      <span class="crisp">Lifestyle.AI</span>
+    </div>
+    <p class="why">Six questions about where your time actually goes, what you want back, and how much of it a machine should touch. You get three automations to set up this week, one intention, and the objects that support it.</p>
+  </div></section>`;
+
+  function step(i) {
+    const q = Q[i];
+    main.innerHTML = header + `
+    <section class="sec lifestyle" style="border-bottom:0"><div class="wrap"><div class="quiz">
+      <div class="quiz-top"><span class="ui dim">${esc(q.kicker)}</span><span class="ui num">${pad(i + 1)} / ${pad(Q.length)}</span></div>
+      <div class="progress"><i style="width:${(i / Q.length) * 100}%"></i></div>
+      <div class="quiz-body">
+        <h2 class="quiz-q">${esc(q.q)}</h2>
+        <div class="opts">${q.options.map((o, n) => `<button class="opt" data-n="${n}"><span class="key">${String.fromCharCode(65 + n)}</span><span class="lbl">${esc(o.label)}</span></button>`).join('')}</div>
+      </div>
+      <div class="quiz-foot">
+        ${i ? '<button class="btn btn-ghost" id="back">&larr; Back</button>' : '<span class="ui dim">Nothing is saved or sent</span>'}
+        <span class="ui dim">Pick one</span>
+      </div>
+    </div></div></section>`;
+    main.querySelectorAll('.opt').forEach(b => b.onclick = () => {
+      answers[i] = q.options[+b.dataset.n];
+      i + 1 < Q.length ? step(i + 1) : results();
+    });
+    const back = document.getElementById('back');
+    if (back) back.onclick = () => step(i - 1);
+    scrollTo(0, 0);
+  }
+
+  function results() {
+    const tags = answers.flatMap(a => a.tags);
+    const lvl = (answers.find(a => typeof a.level === 'number') || { level: 2 }).level;
+    const byId = id => answers[Q.findIndex(q => q.id === id)] || { label: '—', tags: [] };
+    const goal = (byId('goal').tags[0]) || 'goal-hour';
+
+    const autos = (L.automations || [])
+      .filter(a => a.level <= lvl)
+      .map(a => ({ a, s: a.tags.filter(t => tags.includes(t)).length }))
+      .sort((x, y) => y.s - x.s || y.a.level - x.a.level)
+      .slice(0, 3).map(o => o.a);
+
+    const picks = [];
+    [byId('time').tags[0], byId('chore').tags[0], byId('want').tags[0], lvl <= 1 ? 'ai-' + lvl : null]
+      .filter(Boolean).forEach(t => ((L.picks || {})[t] || []).forEach(s => picks.includes(s) || picks.push(s)));
+    const products = picks.map(DB.p).filter(Boolean).slice(0, 3);
+    const look = DB.setups.find(s => s.slug === ((L.looks || {})[goal])) || DB.setups[0];
+    const intention = (L.intentions || {})[goal] || { line: 'Pick one thing.', body: '' };
+
+    main.innerHTML = header + `
+    <section class="sec lifestyle" style="padding-block:40px 0;border-bottom:0"><div class="wrap">
+      <div class="story-block" style="padding-top:0"><span class="ui dim">Your audit</span><div>
+        <h2 class="d-m">Where the time goes.</h2>
+        <dl class="audit">${Q.map((q, n) => `<div><dt>${esc(q.q)}</dt><dd>${esc((answers[n] || {}).label || '—')}</dd></div>`).join('')}</dl>
+      </div></div>
+
+      <div class="story-block"><span class="ui dim">Delegate</span><div>
+        <h2 class="d-m">Three automations for this week.</h2>
+        <p>Set up in order. None of them need permission from anyone, and none of them send anything without you.</p>
+        <div class="autos">${autos.map((a, n) => `<div class="auto">
+          <span class="n">${pad(n + 1)}</span><span class="t">${esc(a.title)}</span><p>${esc(a.how)}</p>
+          <span class="m"><span class="ui dim">Setup</span><span class="ui">${esc(a.effort)}</span></span></div>`).join('')}</div>
+      </div></div>
+
+      <div class="story-block"><span class="ui dim">Intention</span><div>
+        <h2 class="d-m">Ninety days.</h2>
+        <div class="intention"><p class="d-m" style="font-size:clamp(28px,3.4vw,40px)">${esc(intention.line)}</p><p>${esc(intention.body)}</p></div>
+      </div></div>
+
+      <div class="story-block"><span class="ui dim">Supply</span><div>
+        <h2 class="d-m">From the index.</h2>
+        <p>Three things on the shelf that support the plan above.</p>
+        <div class="cards" style="margin-top:24px">${products.map(card).join('')}</div>
+      </div></div>
+
+      <div class="story-block" style="border-bottom:0"><span class="ui dim">Wear it</span><div>
+        <h2 class="d-m">Try the look.</h2>
+        <div class="setups two" style="margin-top:22px">${setupCard(look)}</div>
+        <div class="hero-cta" style="margin-top:26px">
+          <button class="btn solid" id="again">Start over</button>
+          <button class="btn" id="printit">Print this plan</button>
+        </div>
+      </div></div>
+    </div></section>`;
+    document.getElementById('again').onclick = () => { answers.length = 0; step(0); };
+    document.getElementById('printit').onclick = () => window.print();
+    wireSaves();
+    scrollTo(0, 0);
+  }
+
+  Q.length ? step(0) : main.innerHTML = header + '<div class="wrap" style="padding:60px 0"><p class="ui">The quiz could not load.</p></div>';
+}
+
 /* ---------- boot ---------- */
-const PAGES = { home: pageHome, index: pageIndex, object: pageObject, setup: pageSetup };
+const PAGES = { home: pageHome, index: pageIndex, object: pageObject, setup: pageSetup, lifestyle: pageLifestyle };
 load().then(() => {
   chrome();
   (PAGES[document.body.dataset.page] || pageHome)();
